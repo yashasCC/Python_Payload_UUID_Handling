@@ -22,7 +22,7 @@ def convert_ids(input_path, output_path, start_index=1):
         )
 
         if strict_uuid:
-            replacement = f'"id": "${{P_randomID{counter}}}"'
+            replacement = f'"id": "${{P_RandomID{counter}}}"'
             counter += 1
             return replacement
         else:
